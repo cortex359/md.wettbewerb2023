@@ -1,22 +1,23 @@
 import math
+from forest_types import Tree
 
 
+def calc_values_from_trees(trees: [Tree], mapsize: int):
+	a_value = 0
+	d_value = 0
+	total_trees = 0
 
-class Tree:
-	name: str = ""
-	radius: float = 0.0
-	index: int = 0
-	counter: int = 0
+	for t in trees:
+		a_value += t.radius * t.radius * t.counter
+		d_value += t.counter * t.counter
+		total_trees += t.counter
 
-	def __init__(self, name: str, radius: float, index: int):
-		self.name = name
-		self.radius = radius
+	a_value *= math.pi
+	a_value /= mapsize
+	d_value = 1 - ((1/(total_trees * total_trees)) * d_value)
+	b_value = a_value * d_value
 
-	def count(self):
-		self.counter += 1
-
-	def __str__(self):
-		return f'{self.name:15s} {self.radius:4.1f} {self.counter:8d}'
+	return b_value, a_value, d_value
 
 
 def calc_b(forest_file: str):
@@ -34,7 +35,7 @@ def calc_b(forest_file: str):
 		trees.append(Tree(l.split()[1], float(l.split()[0]), i))
 		i += 1
 
-	with open(f"result_files/{forest_file}.txt.out") as file:
+	with open(f"result_files/{forest_file}.txt") as file:
 		forest = [line.removesuffix("\n") for line in file]
 
 	for tree in forest:
@@ -42,40 +43,6 @@ def calc_b(forest_file: str):
 		flavor = int(tree.split()[3])
 		trees[flavor].count()
 
-	a_value = 0
-	d_value = 0
-	total_trees = 0
+	b_value, a_value, d_value = calc_values_from_trees(trees, testcase_l * testcase_b)
 
-	for t in trees:
-		# print(t)
-		a_value += t.radius * t.radius * t.counter
-		d_value += t.counter * t.counter
-		total_trees += t.counter
-
-	a_value *= math.pi
-	a_value /= testcase_b * testcase_l
-
-	d_value = 1 - ((1/(total_trees * total_trees)) * d_value)
-
-	b_value = a_value * d_value
-
-	#print(f'A = {a_value:10.8f}')
-	#print(f'D = {d_value:10.8f}')
-	print(f'B = {b_value:10.8f}')
-
-
-testcases = [
-	"forest01",
-	"forest02",
-	"forest03",
-	"forest04",
-	"forest05",
-	"forest06",
-	"forest07",
-	"forest08",
-	"forest09",
-	"forest10"
-]
-
-for testf in testcases:
-	calc_b(testf)
+	print(f'{testcase_name:30s}: {b_value:10.8f}  a: {a_value:10.8f}  d: {d_value:10.8f}')
