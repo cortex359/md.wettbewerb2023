@@ -1,6 +1,7 @@
 import sys
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+#import proplot as pplt
 import numpy as np
 sys.path.extend(['/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023'])
 from forest_types import Tree
@@ -8,6 +9,9 @@ from scoring import score
 
 
 def plot_forest(forest_specs: str, forest_map: str):
+	###
+	### Read in forest specifications
+	###
 	with open(forest_specs) as file:
 		testcase = [line.removesuffix("\n") for line in file]
 
@@ -22,14 +26,22 @@ def plot_forest(forest_specs: str, forest_map: str):
 		trees.append(Tree(l.split()[1], float(l.split()[0]), i))
 		i += 1
 
+	###
+	### Read in actual forest / tree map
+	###
 	with open(forest_map) as file:
 		forest = [line.removesuffix("\n") for line in file]
 
 	px = 1/plt.rcParams['figure.dpi']  # pixel in inches
-	fig, ax = plt.subplots(1, 1, figsize=(testcase_b*1.2*px, testcase_l*1.2*px))
+	fig_scale_factor = 1.8 * px
+	fig, ax = plt.subplots(1, 1, figsize=(testcase_b*fig_scale_factor, testcase_l*fig_scale_factor))
 	#fig, ax = plt.subplots(1, 1)
 
-	colors = cm.gist_rainbow(np.linspace(0, 1, len(trees)))
+	###
+	### Colorize map
+	###
+	#colors = cm.tab20c(np.linspace(0, 1, len(trees)))
+	colors = cm.spring(np.linspace(0, 1, len(trees)))
 
 	for tree in forest:
 		x = float(tree.split()[0])
@@ -49,9 +61,9 @@ def plot_forest(forest_specs: str, forest_map: str):
 	ax.plot()
 
 	plt.title(f'{testcase_name}, b={b_value:.7f}, a={a_value:.7f}, d={d_value:.7f}')
+	print(f'b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f} {forest_map} {testcase_name}')
 	#plt.show()
 
-	print(f"Finished with {forest_file}.")
 	fig.savefig(f"plots/{forest_file}.svg")
 
 
@@ -64,7 +76,8 @@ elif len(sys.argv) == 1:
 if forest_file != "":
 	forest_specs = f"input_files/{forest_file}.txt"
 	forest_map = f"result_files/{forest_file}.txt"
-elif len(sys.argv) == 3:
+elif len(sys.argv) == 4:
+	forest_file = sys.argv[3]
 	forest_specs = sys.argv[1]
 	forest_map = sys.argv[2]
 else:

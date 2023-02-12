@@ -46,7 +46,7 @@ def calc_table(forest_specs: str, forest_map: str):
 
 	b_value, a_value, d_value = calc_values_from_trees(trees, testcase_l * testcase_b)
 
-	print(f'b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f} {forest_map} {testcase_name}')
+	print(f'b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f} {testcase_name}')
 
 
 #calc_table(sys.argv[1], sys.argv[2])
