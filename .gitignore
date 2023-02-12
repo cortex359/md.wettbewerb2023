@@ -1,3 +1,6 @@
+scoring/plots/*.svg
+scoring/result_files/*.txt
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,linux,pycharm,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,linux,pycharm,visualstudiocode
 

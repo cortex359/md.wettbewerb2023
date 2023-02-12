@@ -1,4 +1,6 @@
 import math
+import sys
+
 from forest_types import Tree
 
 
@@ -20,8 +22,8 @@ def calc_values_from_trees(trees: [Tree], mapsize: int):
 	return b_value, a_value, d_value
 
 
-def calc_b(forest_file: str):
-	with open(f"input_files/{forest_file}.txt") as file:
+def calc_table(forest_specs: str, forest_map: str):
+	with open(f"{forest_specs}") as file:
 		testcase = [line.removesuffix("\n") for line in file]
 
 	testcase_name = testcase[0]
@@ -35,14 +37,16 @@ def calc_b(forest_file: str):
 		trees.append(Tree(l.split()[1], float(l.split()[0]), i))
 		i += 1
 
-	with open(f"result_files/{forest_file}.txt") as file:
+	with open(f"{forest_map}") as file:
 		forest = [line.removesuffix("\n") for line in file]
 
 	for tree in forest:
-		# x, y, size, flavor = tree.split()[0,1]
 		flavor = int(tree.split()[3])
 		trees[flavor].count()
 
 	b_value, a_value, d_value = calc_values_from_trees(trees, testcase_l * testcase_b)
 
-	print(f'{testcase_name:30s}: {b_value:10.8f}  a: {a_value:10.8f}  d: {d_value:10.8f}')
+	print(f'b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f} {forest_map} {testcase_name}')
+
+
+#calc_table(sys.argv[1], sys.argv[2])
