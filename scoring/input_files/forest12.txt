@@ -1,0 +1,27 @@
+PrimeRadiusForest
+1000 1000
+2 Tree_a
+3 Tree_b
+5 Tree_c
+7 Tree_d
+11 Tree_e
+13 Tree_f
+17 Tree_g
+19 Tree_h
+23 Tree_i
+29 Tree_j
+31 Tree_k
+37 Tree_l
+41 Tree_m
+43 Tree_n
+47 Tree_o
+53 Tree_p
+59 Tree_q
+61 Tree_r
+67 Tree_s
+71 Tree_t
+73 Tree_u
+79 Tree_v
+83 Tree_w
+89 Tree_x
+97 Tree_y
