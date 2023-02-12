@@ -1,0 +1,18 @@
+EqualRadiusForest
+1000 1000
+10 Tree_a
+10 Tree_b
+10 Tree_c
+10 Tree_d
+10 Tree_e
+10 Tree_f
+10 Tree_g
+10 Tree_h
+10 Tree_i
+10 Tree_j
+10 Tree_k
+10 Tree_l
+10 Tree_m
+10 Tree_n
+10 Tree_o
+10 Tree_p
