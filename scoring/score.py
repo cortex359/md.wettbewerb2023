@@ -48,5 +48,5 @@ def calc_table(forest_specs: str, forest_map: str):
 
 	print(f'b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f} {testcase_name}')
 
-
-#calc_table(sys.argv[1], sys.argv[2])
+if __name__ == "__main__":
+	calc_table(sys.argv[1], sys.argv[2])
