@@ -1,9 +1,8 @@
-Borkelelement
-Aluminafichte
-Bariumbirke
 Berylliumbuche
 Bor-Esche
+Aluminafichte
 Brombeere
+Bariumbirke
 Calciumceder
 Carbonkastanie
 Chromkiefer
@@ -15,7 +14,6 @@ Europium-Esche
 Eisen-Erle
 Fluor-Fichte
 Gallium-Ginkgo
-Germanium-Geißblatt
 Goldregen-Gold
 Heliumhainbuche
 Holmium-Holz
@@ -35,7 +33,6 @@ Nickel-Nelke
 Niob-Eukalyptus
 Stickstoff-Nachtkerze
 Osmium-Olive
-Sauerstoff-Eiche
 Palladium-Pappel
 Phosphor-Pinie
 Platinplatane
@@ -48,7 +45,6 @@ Radon-Rosenholz
 Rhenium-Rotbuche
 Rhodium-Roteiche
 Rubidium-Rosenholz
-Ruthenium-Roteiche
 Scandium-Schlehe
 Selen-Salbei
 Silberlinde
@@ -62,7 +58,6 @@ Terbium-Trauerweide
 Thorium-Thuja
 Thulium-Trompetenbaum
 Titan-Tanne
-Kohlenstoff-Tanne
 Ungulatulme
 Uran-Ulme
 Vanadium-Verbene
@@ -129,7 +124,6 @@ Nickel-Nadel-Ulme
 Niob-Nelkenbaum
 Nitrogen-Nelkenwurz
 Osmium-Elsbeere
-Oxygen-Orangenbaum
 Palladium-Palme
 Phosphor-Pappel
 Platin-Platane
@@ -144,7 +138,7 @@ Rubidium-Rotdorn
 Ruthenium-Rüster
 Samarium-Sanddorn
 Scandium-Schafgarbe
-Schwefel-Schwarzer Holunder
+Schwefel-SchwarzerHolunder
 Selen-Serpentinstein
 Silberlinde
 Silizium-Silberweide
@@ -159,7 +153,7 @@ Thorium-Thujenbaum
 Thulium-Traubeneiche
 Titan-Trompetenbaum
 Tungsten-Tulpenbaum
-Ununhexium-Umbrella Pine
+Ununhexium-UmbrellaPine
 Ununoctium-Orangenbaum
 Ununpentium-Pinie
 Ununseptium-Safranbaum
