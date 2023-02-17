@@ -49,11 +49,15 @@ def calc_table(forest_specs: str, forest_map: str):
         trees[flavor].count()
 
     b_value, a_value, d_value = calc_values_from_trees(trees, testcase_l * testcase_b)
-    weight = float(forest_map.removesuffix(".txt").split(".w")[-1])
-    print(f'w:{weight:1.3f} b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f}') #  {testcase_name}
+    try:
+        weight = float(forest_map.removesuffix(".out").removesuffix(".txt").split(".w")[-1])
+        print(f'w:{weight:1.3f} b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f}') #  {testcase_name}
+        global weights
+        weights.append(weight)
+    except ValueError:
+        print(f'b:{b_value:10.8f} a:{a_value:10.8f} d:{d_value:10.8f}')
 
-    global weights, b_values, a_values, d_values
-    weights.append(weight)
+    global b_values, a_values, d_values
     b_values.append(b_value)
     a_values.append(a_value)
     d_values.append(d_value)
@@ -102,4 +106,4 @@ if __name__ == "__main__":
         for fmap in sys.argv[2:]:
             calc_table(sys.argv[1], fmap)
 
-plot_table(weights, b_values, a_values, d_values)
+#plot_table(weights, b_values, a_values, d_values)

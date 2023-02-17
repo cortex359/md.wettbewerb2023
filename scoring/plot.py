@@ -41,7 +41,7 @@ def plot_forest(forest_specs: str, forest_map: str):
 	### Colorize map
 	###
 	#colors = cm.tab20c(np.linspace(0, 1, len(trees)))
-	colors = cm.PiYG(np.linspace(0, 1, len(trees)))
+	colors = cm.Spectral(np.linspace(0, 1, len(trees)))
 
 	for tree in forest:
 		x = float(tree.split()[0])
