@@ -25,9 +25,9 @@
     pi-cpp/saved_results/2022_02_17/forest05.txt.out
 
 ## Forest 06
-    b:0.83643882
-    Gewichtung: 0.48858333…
-    pi-cpp/saved_results/2022_02_17/forest06.txt.out
+    b:0.83680630
+    Gewichtung: 0.4516666666666628
+    forest06-0.4516666666666628.txt
 
 ## Forest 07
     b:0.83643882
