@@ -1,3 +1,14 @@
+## Forest 03
+    b:0.68401860
+    Gewichtung: 0.161361
+    pi-cpp/saved_results/2022_02_17/forest03.txt.out
+
+
+## Forest 04
+    b:0.82450314
+    Gewichtung: 0.4003
+    pi-cpp/saved_results/2022_02_17/forest04.txt.out
+
 ## Forest 05
     b:0.82450314
     Gewichtung: 0.4003
