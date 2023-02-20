@@ -96,6 +96,8 @@ if __name__ == "__main__":
 
 	endTime = time.perf_counter_ns()
 
+	print(f'---------------------------------------------')
+	print(f'---> {in_file}')
 	print(f"Finished after {(endTime - startTime) / 1E9}s")
 
 	r = [i for s in r for i in s]
@@ -123,7 +125,7 @@ if __name__ == "__main__":
 	ax = fig.add_subplot(projection='3d')
 
 	# Add x, y gridlines
-	ax.grid(b=True, color='grey',
+	ax.grid(visible=True, color='grey',
 			linestyle='-.', linewidth=0.3,
 			alpha=0.2)
 
