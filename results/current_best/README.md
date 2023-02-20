@@ -51,7 +51,7 @@
     File: pi-cpp/saved_results/2022_02_17/forest09.txt.out
 
 ## Forest 10
-    b:0.90483842 a:0.93878132 d:0.96384366
-    Gewichtung: 0.304
-    Commit: 17dd51e3e101d4881ed601281f8c9dc7da94a78c
-    File: pi-cpp/saved_results/2022_02_17/forest10.txt.out
+    b:0.90594467        
+    Gewichtung: 0.2209553333333287 (nicht-deterministisch)
+    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
+    forest10-0.29746666666666755.txt
