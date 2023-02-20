@@ -1,3 +1,7 @@
+## Forest 06
+    b:0.83643882
+    pi-cpp/saved_results/2022_02_17/forest06.txt.out
+
 ## Forest 07
     b:0.83643882
     pi-cpp/saved_results/2022_02_17/forest07.txt.out
