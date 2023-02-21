@@ -31,19 +31,17 @@
 
 ## Forest 07
     b:0.83763051
-    Gewichtung: 0.5441333333333329
+    Gewichtung: 0.5441333333333329 (nicht-deterministisch)
     auf dem HPC gefunden
+    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
     forest07.w0.5441333333333329.txt
 
 ## Forest 08
-    b:0.89414930
-    Solver_Release
-    File: md.wettbewerb2023/results/2023-02-20_Solver/forest08.w0.6675666666666666.txt
-    Gleiche Ergebnisse mit den Gewichtungen:
-      0.6675533333333336
-      0.6675666666666666
-      0.6675733333333336
-      0.6675933333333336
+    b:0.89629529 
+    Gewichtung: 0.606666666666666 (nicht-deterministisch)
+    auf dem HPC gefunden
+    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
+    forest08.w0.606667.txt
 
 ## Forest 09 
     b:0.86202757
