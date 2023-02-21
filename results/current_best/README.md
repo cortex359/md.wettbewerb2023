@@ -30,9 +30,10 @@
     forest06-0.4516666666666628.txt
 
 ## Forest 07
-    b:0.83643882
-    Gewichtung: 0.48858333…
-    pi-cpp/saved_results/2022_02_17/forest07.txt.out
+    b:0.83763051
+    Gewichtung: 0.5441333333333329
+    auf dem HPC gefunden
+    forest07.w0.5441333333333329.txt
 
 ## Forest 08
     b:0.89414930
