@@ -28,12 +28,25 @@ CIRCLE_TYPES = 100
 
 i = 0
 row = 0
+c_type = 0
+c_counter = 1
+
+def circle_type(i: int) -> int:
+    global c_counter
+    global c_type
+    c_max = 114 if c_type < 56 else 115
+    if c_counter == c_max:
+        c_counter = 1
+        c_type += 1
+
+    c_counter += 1
+    return c_type - 1
 
 y = c_radius + h_spacing
 while y < 4000:
     delta = 0 if row % 2 == 0 else c_radius
     for c in range(1, int(c_full_line - (row % 2)), 2):
-        print(f'{delta + c*c_radius} {y} 20 {i % 100}')
+        print(f'{delta + c*c_radius} {y} 20 {circle_type(i)}')
         i += 1
     row += 1
     y += DELTA + h_spacing
