@@ -1,0 +1,40 @@
+<html><head>
+<meta name="robots" content="noindex">
+<style>
+html
+{font-family: Arial, Helvetica, sans-serif;}
+th
+{border:2px solid black;}
+tr, th, td
+{padding: 8px;}
+table, tr, td
+{border:1px solid black;
+border-collapse: collapse;}
+</style>
+</head><body><center>
+<table border=0><tr>
+<td style="border-right: 0px;"><a href=https://www.mathe-dual.de><img height=80 src=images/logo_mathedual.png></a></td>
+<td valign=bottom style="border: 0px;"><h1>Wettbewerb 2023 sponsored by</h1></td>
+<td style="border-left: 0px;"><a href=https://www.dsa.de><img src=images/dsa-logo-blue.svg></a></td>
+</tr></table>
+<h2>Aktuelle Wettbewerb Auswertung (Stand: 24.02.23, 00:51 Uhr)</h2>
+<table>
+<tr><th>Platz</th><th>Team</th><th>Bonus</th><th>Gesamt Score</th></tr>
+<tr><td>1.</td><td><a href="groups/koeln/" target="_top">koeln</td><td align=right>50</td><td align=right>7876</td></tr>
+<tr><td>2.</td><td><a href="groups/coca-cola-und-nutella/" target="_top">coca-cola-und-nutella</td><td align=right>25</td><td align=right>7600</td></tr>
+<tr><td>3.</td><td><a href="groups/uka/" target="_top">uka</td><td align=right>&nbsp;</td><td align=right>6132</td></tr>
+<tr><td>4.</td><td><a href="groups/pi/" target="_top">pi</td><td align=right>100</td><td align=right>6049</td></tr>
+<tr><td>5.</td><td><a href="groups/ets/" target="_top">ets</td><td align=right>&nbsp;</td><td align=right>5249</td></tr>
+<tr><td>6.</td><td><a href="groups/horst/" target="_top">horst</td><td align=right>&nbsp;</td><td align=right>5085</td></tr>
+<tr><td>7.</td><td><a href="groups/bug-prevention/" target="_top">bug-prevention</td><td align=right>&nbsp;</td><td align=right>2733</td></tr>
+<tr><td>8.</td><td><a href="groups/fabio-palmen/" target="_top">fabio-palmen</td><td align=right>&nbsp;</td><td align=right>2449</td></tr>
+<tr><td>9.</td><td><a href="groups/mongulus-und-bongulus/" target="_top">mongulus-und-bongulus</td><td align=right>&nbsp;</td><td align=right>1340</td></tr>
+<tr><td>10.</td><td><a href="groups/suffkapuff/" target="_top">suffkapuff</td><td align=right>&nbsp;</td><td align=right>1220</td></tr>
+<tr><td>11.</td><td><a href="groups/art-club/" target="_top">inaktive Teams (7)</td><td align=right>&nbsp;</td><td align=right>1069</td></tr>
+</table><br><p>
+<p><a href=index_main.html><img height=300 src=scores.png></a></p>
+<h2>Hier geht es zur <a href="index_main.html" target="_top">Vergleichs&uuml;bersicht aller Einzelergebnisse</a></h2>
+<p>Alternativ kann man <a href="comparator.html" target="_top">hier</a> die Einzelergebnisse bestimmter Teams miteinander vergleichen.</p>
+<p>Die Berechnung der Scores wird <a href="score.html" target="_top">hier</a> erl&auml;utert.</p>
+<p>Weitere Informationen zum Wettbewerb findet man <a href=https://www.mathe-dual.de/index.php/wettbewerb-link>hier</a>.</p>
+</center></body></html>
