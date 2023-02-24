@@ -1,10 +1,10 @@
 import math
 import sys
 import matplotlib.pyplot as plt
-# import proplot as pplt
 import numpy as np
-
 from forest_types import Tree
+
+# import proplot as pplt
 
 
 def calc_values_from_trees(trees: [Tree], mapsize: int):
@@ -51,11 +51,17 @@ def calc_table(forest_specs: str, forest_map: str):
     b_value, a_value, d_value = calc_values_from_trees(trees, testcase_l * testcase_b)
     try:
         weight = float(forest_map.removesuffix(".out").removesuffix(".txt").split(".w")[-1])
-        print(f'b:{b_value:10.8f} w:{weight:1.5f} {forest_map}')
+        if OUTPUT != "md-table":
+            print(f'b:{b_value:10.8f} w:{weight:1.5f} {forest_map}')
         global weights
         weights.append(weight)
     except ValueError:
-        print(f'b:{b_value:10.8f}        {forest_map}')
+        if OUTPUT != "md-table":
+            print(f'b:{b_value:10.8f}        {forest_map}')
+
+    if OUTPUT == "md-table":
+        # | b | a | d | test case |
+        print(f'| {b_value:10.8f} | {a_value:10.8f} | {d_value:10.8f} | {testcase_name:30s} |')
 
     global b_values, a_values, d_values
     b_values.append(b_value)
@@ -101,6 +107,7 @@ weights = []; b_values = []; a_values = []; d_values = []
 testcase_name = ""
 
 if __name__ == "__main__":
+    OUTPUT = "md-table"
     if (len(sys.argv) >= 3):
         # score plot
         for fmap in sys.argv[2:]:

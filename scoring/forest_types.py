@@ -4,7 +4,7 @@ class Tree:
 	index: int = 0
 	counter: int = 0
 
-	def __init__(self, name: str, radius: float, index: int):
+	def __init__(self, name: str, radius: float, index: int = 0):
 		self.name = name
 		self.radius = radius
 

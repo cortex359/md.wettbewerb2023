@@ -17,7 +17,6 @@ if VERSION == 2:
 elif VERSION == 1:
 	SOLVER_BINARY = "/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi-cpp/inputs/Solver_Release"
 
-
 def computePoints(id: int, file: str, weights):
 	results = []
 
