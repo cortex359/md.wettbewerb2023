@@ -2,7 +2,7 @@ import math
 import sys
 import matplotlib.pyplot as plt
 import numpy as np
-from scoring.forest_types import Tree
+from forest_types import Tree
 import os
 
 
@@ -52,7 +52,7 @@ if len(sys.argv) == 2:
 else:
     forest = 'forest02'
 
-table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/wettbewerb.mathe-dual.de/groups/koeln/koeln.{forest}.table'
+table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/web/data/uka/uka.{forest}.table'
 
 our_map = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/results/current_best/{forest}.txt.out'
 our_specs = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi/input_files/{forest}.txt'
@@ -78,7 +78,8 @@ b_our_best, a_our_best, d_our_best = calc_values_from_files(our_specs, our_map)
 
 print(f'b:{b_our_best:16.14f} a:{a_our_best:16.14f} d:{d_our_best:16.14f} {map_name} (pi)')
 
-print(f'b:{(((b_our_best/b_value)-1)*100):15.11f}% a:{(((a_our_best/a_value)-1)*100):15.11f}% d:{(((d_our_best/d_value)-1)*100):15.11f}% {map_name} (relative diff.)')
+if b_value > 0 and a_value > 0 and d_value > 0:
+    print(f'b:{(((b_our_best/b_value)-1)*100):15.11f}% a:{(((a_our_best/a_value)-1)*100):15.11f}% d:{(((d_our_best/d_value)-1)*100):15.11f}% {map_name} (relative diff.)')
 print(f'---\n')
 
 

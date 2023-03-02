@@ -28,3 +28,22 @@ Cortex's analytics, research and approaches [cortex/md.wettbewerb2023](https://g
 ![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 
+## Usage
+Generate webtable process:
+
+Fetch snapshots with `python webcrawler.py` and extract current snapshot.zip.
+
+Enter the group directory and extract tables:
+```zsh
+for i in {01..14} ; do 
+  pcre2grep -Me '(?:<pre>)([^<]+[\n\s]*)+(?:<\/pre>)' -m1 --output '$1' snapshot_020323_1842/forest${i}.txt.html > ${PWD:t}.forest${i}.table 
+done
+```
+parse tables and save relative scores:
+```zsh
+{
+  for i in {01..13} ; do 
+    python ./score_webtable.py forest$i;
+  done
+} >| relative_score_tables/uka-2021-03-02_18-42.txt
+```
