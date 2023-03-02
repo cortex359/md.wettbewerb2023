@@ -54,3 +54,21 @@
     Gewichtung: 0.2209553333333287 (nicht-deterministisch)
     Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
     forest10-0.29746666666666755.txt
+
+## Forest 11
+    b:0.88982139
+    optimal_packing/Generator.py
+
+## Forest 12
+    b:0.81716850
+    Gewichtung: w:0.56280 (nicht-deterministisch)
+    auf dem HPC gefunden
+    Tag: non-det
+    forest12.w0.562800.txt
+
+## Forest 13
+    b:0.89485890
+    Gewichtung: w:1.22900 (nicht-deterministisch)
+    auf dem HPC gefunden
+    Tag: non-det
+    forest13.w1.229000.txt

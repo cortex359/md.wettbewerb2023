@@ -12,6 +12,9 @@
 | 0.89629529 | 0.93282682 | 0.96083782 | LinearRadiusVariationForest    |
 | 0.86202757 | 0.90230311 | 0.95536362 | LinearRadiusVariationForest_2  |
 | 0.90594467 | 0.93863838 | 0.96516901 | BigLinearRadiusVariationForest |
+| 0.88982139 | 0.89880966 | 0.98999981 | RomanNonVariationForest        |
+| 0.81716850 | 0.87336276 | 0.93565760 | PalmenWald                     |
+| 0.89485890 | 0.93488746 | 0.95718355 | TeamKoelnWald                  |
 
 ## Forest01
 ![](./plots/forest01.svg)
@@ -42,3 +45,15 @@
 
 ## Forest10
 ![](./plots/forest10.svg)
+
+# New Testcases
+
+## Forest11
+![](./plots/forest11.svg)
+
+## Forest12
+![](./plots/forest12.svg)
+
+## Forest13
+![](./plots/forest13.svg)
+
