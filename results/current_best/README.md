@@ -72,3 +72,10 @@
     auf dem HPC gefunden
     Tag: non-det
     forest13.w1.229000.txt
+
+## Forest 14
+    b:0.903554
+    Gewichtung: weight:0.69250000 (nicht-deterministisch)
+    auf Tsunami gefunden
+    Tag: non-det
+    forest14/forest14.w0.69250000.txt
