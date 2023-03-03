@@ -3,6 +3,7 @@ scoring/result_files/*.txt
 
 pi-cpp_vs.7
 web/data
+execute/results
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,linux,pycharm,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,linux,pycharm,visualstudiocode

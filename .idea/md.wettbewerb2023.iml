@@ -3,8 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
-      <excludeFolder url="file://$MODULE_DIR$/web/data" />
       <excludeFolder url="file://$MODULE_DIR$/pi-cpp_vs.7/" />
+      <excludeFolder url="file://$MODULE_DIR$/web/data" />
+      <excludeFolder url="file://$MODULE_DIR$/execute/results" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

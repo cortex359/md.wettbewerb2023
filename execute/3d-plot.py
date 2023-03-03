@@ -58,7 +58,7 @@ def init_globals(counter):
 
 if __name__ == "__main__":
 	if len(sys.argv) != 5:
-		print("paralell.py [in_file] [samples] [re_range] [ce_range]")
+		print("3d-plot.py [in_file] [samples] [re_range] [ce_range]")
 		in_file = "input_files/forest01.txt"
 		total_sample_size = 1000
 		re_start, re_end = (0., 2.)
