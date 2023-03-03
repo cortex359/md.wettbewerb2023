@@ -13,9 +13,9 @@ Repository zur offiziellen Einreichung der Ergebnisse [md2022/groups/pi](https:/
 
 Rankail's solver in C++ [thesing.samuel/pi-cpp](https://git-ce.rwth-aachen.de/thesing.samuel/pi-cpp)
 
-Cortex's analytics, research and approaches [cortex/md.wettbewerb2023](https://git-ce.rwth-aachen.de/cortex/md.wettbewerb2023)
+Cortex's analytics, research, batch jobs and approaches [cortex/md.wettbewerb2023](https://git-ce.rwth-aachen.de/cortex/md.wettbewerb2023)
 
-[![](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
+![](https://forthebadge.com/images/badges/works-on-my-machine.svg)
 
 ---
 
