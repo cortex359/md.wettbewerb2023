@@ -1,9 +1,10 @@
+import os.path
 import sys
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 #import proplot as pplt
 import numpy as np
-sys.path.extend(['/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023'])
+sys.path.extend([os.path.split(sys.prefix)[0]])
 from forest_types import Tree
 from scoring import score
 
