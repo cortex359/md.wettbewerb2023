@@ -33,26 +33,34 @@ def calc_team(team, forest):
     #print(f'b:{b_value:16.14f} a:{a_value:16.14f} d:{d_value:16.14f} {map_name} ({team})')
 
 
-print("| b | a | d | Forest | Team |")
-print("|---|---|---|:-------|-----:|")
 results = []
 for team in teams:
     b_value, a_value, d_value, map_name = calc_team(team, forest)
-    print(f'| b:{b_value:16.14f} | a:{a_value:16.14f} | d:{d_value:16.14f} | {map_name} | {team} |')
+    #print(f'| {b_value:16.14f} | {a_value:16.14f} | {d_value:16.14f} | {map_name} | {team} |')
     results.append((b_value, a_value, d_value, team))
 
-bestIndx = [r[0] for r in results].index(max([r[0] for r in results]))
-b_value, a_value, d_value, team = results[bestIndx]
+#bestIndx = [r[0] for r in results].index(max([r[0] for r in results]))
+#b_value, a_value, d_value, team = results[bestIndx]
+
+print(f"# {forest.capitalize()}: {map_name}\n")
+
+print("|                b |                a |                d | Team                  |")
+print("|-----------------:|-----------------:|-----------------:|:----------------------|")
+
+results.sort()
+for r in results:
+    b_value, a_value, d_value, team = r
+    print(f'| {b_value:16.14f} | {a_value:16.14f} | {d_value:16.14f} | {team} |')
 
 our_map = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/results/current_best/{forest}.txt.out'
 our_specs = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi/input_files/{forest}.txt'
 
 b_our_best, a_our_best, d_our_best = Forest.calc_values_from_files(our_specs, our_map)
 
-print(f'| b:{b_our_best:16.14f} | a:{a_our_best:16.14f} | d:{d_our_best:16.14f} | {map_name} | PI |')
+print(f'| {b_our_best:16.14f} | {a_our_best:16.14f} | {d_our_best:16.14f} | PI |')
 
 if b_value > 0 and a_value > 0 and d_value > 0:
-    print(f'|    {(((b_our_best/b_value)-1)*100):15.11f}% |    {(((a_our_best/a_value)-1)*100):15.11f}% |    {(((d_our_best/d_value)-1)*100):15.11f}% | {map_name} | rel. diff to {team} |')
+    print(f'| {(((b_our_best/b_value)-1)*100):15.11f}% | {(((a_our_best/a_value)-1)*100):15.11f}% | {(((d_our_best/d_value)-1)*100):15.11f}% | rel. diff to {team} |')
 print(f'\n---\n')
 
 
