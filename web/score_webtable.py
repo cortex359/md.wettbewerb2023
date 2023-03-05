@@ -5,33 +5,41 @@ import numpy as np
 import Forest
 import os
 
-if len(sys.argv) == 3:
-    team = sys.argv[1]
-    forest = sys.argv[2]
+if len(sys.argv) >= 3:
+    forest = sys.argv[1]
+    teams = sys.argv[2:]
 else:
     exit(1)
 
-table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/web/data/{team}/{team}.{forest}.table'
+
+def calc_team(team, forest):
+    table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/web/data/{team}/{team}.{forest}.table'
+
+    with open(f"{table_file}") as file:
+        table = [line.removesuffix("\n") for line in file if line.strip() != ""]
+
+    map_name = table[0]
+    map_size = float(table[1].split()[0]) * float(table[1].split()[1])
+
+    trees = []
+    for row in table[2:]:
+        radius, tree, _, count = row.split()
+        t = Forest.Tree(tree, float(radius))
+        t.counter = int(count)
+        trees.append(t)
+
+    b_value, a_value, d_value = Forest.calc_values_from_trees(trees, map_size)
+    return b_value, a_value, d_value, map_name
+    #print(f'b:{b_value:16.14f} a:{a_value:16.14f} d:{d_value:16.14f} {map_name} ({team})')
+
+
+for team in teams:
+    b_value, a_value, d_value, map_name = calc_team(team, forest)
+    print(f'b:{b_value:16.14f} a:{a_value:16.14f} d:{d_value:16.14f} {map_name} ({team})')
+
 
 our_map = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/results/current_best/{forest}.txt.out'
 our_specs = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi/input_files/{forest}.txt'
-
-with open(f"{table_file}") as file:
-    table = [line.removesuffix("\n") for line in file if line.strip() != ""]
-
-map_name = table[0]
-map_size = float(table[1].split()[0]) * float(table[1].split()[1])
-
-trees = []
-for row in table[2:]:
-    radius, tree, _, count = row.split()
-    t = Forest.Tree(tree, float(radius))
-    t.counter = int(count)
-    trees.append(t)
-    # print(tree, count)
-
-b_value, a_value, d_value = Forest.calc_values_from_trees(trees, map_size)
-print(f'b:{b_value:16.14f} a:{a_value:16.14f} d:{d_value:16.14f} {map_name} ({team})')
 
 b_our_best, a_our_best, d_our_best = Forest.calc_values_from_files(our_specs, our_map)
 
