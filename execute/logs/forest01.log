@@ -52,3 +52,20 @@
 == Runtime of 0:02:38.438014 [H:M:S] for 60000 runs
 ==          0.002640633566666667 seconds/run
 2023-03-03 14:44:26.725694 === Run ended ===
+2023-03-05 20:57:59.028933 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=8
+== name=forest01 total_sample_size=500000 seed_start=1 seed_end=100000 weight_start=0.204 weight_end=0.205
+2023-03-05 20:58:44.091265 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest01 total_sample_size=500000 seed_start=1 seed_end=100000 weight_start=0.204 weight_end=0.205
+-> b:0.680481 weight:0.20500000 not saved!
+== Runtime of 0:18:38.709586 [H:M:S] for 500000 runs
+==          0.002237419172 seconds/run
+2023-03-05 21:17:22.800851 === Run ended ===
+2023-03-05 21:22:48.242670 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest01 total_sample_size=100000 seed_start=1 seed_end=10 weight_start=0.01 weight_end=0.98
+-> b:0.678262 weight:0.79523810 not saved!
+== Runtime of 0:00:02.488741 [H:M:S] for 100000 runs
+==          2.4887410000000002e-05 seconds/run
+2023-03-05 21:22:50.731411 === Run ended ===
