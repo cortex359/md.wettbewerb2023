@@ -1,6 +1,6 @@
 import functools
 import os
-import regex as re
+import re
 import shutil
 import time
 import requests

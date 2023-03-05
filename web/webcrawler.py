@@ -1,7 +1,6 @@
 import os
 import re
 import time
-
 from Team import Team, get_page
 
 # Top 10 + one entry from "inaktive Teams (7)"
