@@ -1,10 +1,18 @@
 #!/usr/bin/env zsh
 
-forest=forest03
+function plot_and_optimize() {
+    local i=$1
+    python plot.py ../input/forest${i}.txt result_files/current_best/forest${i}.txt.out forest${i} && npx svgo plots/forest${i}.svg
+}
 
-for seg in $(seq 0 0.25 1.75); do
-    { for i in $(seq $((seg)) 0.001 ${${$((seg + 0.25))}[0,5]} ); do {
-        ./bin/Release-linux-x86_64/04/04 inputs/${forest}.txt results/${forest}.w${i}.txt ${i}
-      }; done
-    } &
-; done
+function plot_and_optimize_all() {
+    for i in {01..14} ; do {
+        plot_and_optimize $i &
+    }; done
+}
+
+function check_all() {
+    for i in {01..14} ; do {
+        env LC_ALL=en_US java -jar ../vendor/checker.jar ../input/forest${i}.txt result_files/current_best/forest${i}.txt.out
+    }; done
+}
