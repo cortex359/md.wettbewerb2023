@@ -5,12 +5,13 @@ import numpy as np
 import Forest
 import os
 
-if len(sys.argv) == 2:
-    forest = sys.argv[1]
+if len(sys.argv) == 3:
+    team = sys.argv[1]
+    forest = sys.argv[2]
 else:
-    forest = 'forest02'
+    exit(1)
 
-table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/web/data/uka/uka.{forest}.table'
+table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/web/data/{team}/{team}.{forest}.table'
 
 our_map = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/results/current_best/{forest}.txt.out'
 our_specs = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi/input_files/{forest}.txt'
@@ -30,7 +31,7 @@ for row in table[2:]:
     # print(tree, count)
 
 b_value, a_value, d_value = Forest.calc_values_from_trees(trees, map_size)
-print(f'b:{b_value:16.14f} a:{a_value:16.14f} d:{d_value:16.14f} {map_name} (koeln)')
+print(f'b:{b_value:16.14f} a:{a_value:16.14f} d:{d_value:16.14f} {map_name} ({team})')
 
 b_our_best, a_our_best, d_our_best = Forest.calc_values_from_files(our_specs, our_map)
 

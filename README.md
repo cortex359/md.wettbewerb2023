@@ -42,8 +42,8 @@ done
 parse tables and save relative scores:
 ```zsh
 {
-  for i in {01..13} ; do 
-    python ./score_webtable.py forest$i;
+  for i in {01..14} ; do
+    python ./score_webtable.py koeln forest$i;
   done
-} >| relative_score_tables/uka-2021-03-02_18-42.txt
+} >| relative_score_tables/koeln-2023-03-05_21-38.txt
 ```
