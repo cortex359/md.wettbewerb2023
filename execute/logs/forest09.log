@@ -1,0 +1,35 @@
+2023-03-03 16:28:34.629748 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest09 count=100 start=0.1 end=1.9
+-> b:0.858762 weight:1.45000000 saved at forest09/forest09.w1.45000000.txt
+== Runtime of 0:02:02.453130 [H:M:S] for 100 runs
+==          1.2245313 seconds/run
+2023-03-03 16:30:37.082878 === Run ended ===
+2023-03-03 16:33:11.028648 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest09 count=100 start=0.2 end=0.8
+-> b:0.860285 weight:0.21200000 saved at forest09/forest09.w0.21200000.txt
+== Runtime of 0:00:07.669468 [H:M:S] for 100 runs
+==          0.07669468 seconds/run
+2023-03-03 16:33:18.698116 === Run ended ===
+2023-03-03 16:38:37.399174 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest09 count=1000 start=0.205 end=0.275
+-> b:0.860285 weight:0.21200000 saved at forest09/forest09.w0.21200000.txt
+== Runtime of 0:00:42.140402 [H:M:S] for 1000 runs
+==          0.042140402 seconds/run
+2023-03-03 16:39:19.539576 === Run ended ===
+2023-03-03 16:40:05.272346 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest09 count=1000 start=0.2664 end=0.2665
+-> b:0.842154 weight:0.26640000 saved at forest09/forest09.w0.26640000.txt
+== Runtime of 0:00:38.205294 [H:M:S] for 1000 runs
+==          0.038205294 seconds/run
+2023-03-03 16:40:43.477640 === Run ended ===
+2023-03-03 17:09:04.058521 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest09 count=1000 start=0.211 end=0.213
+-> b:0.860316 weight:0.21212600 saved at forest09/forest09.w0.21212600.txt
+== Runtime of 0:01:29.576465 [H:M:S] for 1000 runs
+==          0.089576465 seconds/run
+2023-03-03 17:10:33.634986 === Run ended ===

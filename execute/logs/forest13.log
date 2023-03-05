@@ -1,0 +1,34 @@
+2023-03-03 12:00:38.035414 === Run started with name=forest13 count=100 start=0.0 end=2.0.
+	b:0.892377 weight:0.46000000 saved at forest13/forest13.w0.46000000.txt
+2023-03-03 12:21:13.947101 === Run ended (count=100 start=0.0 end=2.0)
+2023-03-03 16:36:25.326671 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest13 count=200 start=1.22 end=1.235
+-> b:0.892017 weight:1.22015000 saved at forest13/forest13.w1.22015000.txt
+== Runtime of 0:01:27.262689 [H:M:S] for 200 runs
+==          0.43631344499999997 seconds/run
+2023-03-03 16:37:52.589360 === Run ended ===
+2023-03-03 16:50:08.009283 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest13 count=200 start=0.39 end=0.52
+-> b:0.894074 weight:0.46605000 saved at forest13/forest13.w0.46605000.txt
+== Runtime of 0:00:57.445885 [H:M:S] for 200 runs
+==          0.287229425 seconds/run
+2023-03-03 16:51:05.455168 === Run ended ===
+2023-03-03 16:53:32.240288 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest13 count=2000 start=0.45 end=0.47
+-> b:0.894462 weight:0.45218000 saved at forest13/forest13.w0.45218000.txt
+== Runtime of 0:08:29.075137 [H:M:S] for 2000 runs
+==          0.2545375685 seconds/run
+2023-03-03 17:02:01.315425 === Run ended ===
+2023-03-03 17:06:51.777242 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest13 count=20000 start=0.022 end=1.3
+-> b:0.894484 weight:0.54233770 saved at forest13/forest13.w0.54233770.txt
+== Runtime of 3:04:39.277243 [H:M:S] for 20000 runs
+==          0.55396386215 seconds/run
+2023-03-03 20:11:31.054485 === Run ended ===
+2023-03-05 17:41:24.262944 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest13 count=20000 start=1.11 end=1.89

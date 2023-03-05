@@ -1,0 +1,6 @@
+2023-03-03 11:45:03.020066 === Run started with name=forest12 count=100 start=0.0 end=2.0.
+	b:0.809266 weight:1.78000000 saved at forest12/forest12.w1.78000000.txt
+2023-03-03 11:45:09.749933 === Run ended (count=100 start=0.0 end=2.0)
+2023-03-03 11:45:45.089862 === Run started with name=forest12 count=10000 start=0.01 end=1.99.
+	b:0.819014 weight:0.21116800 saved at forest12/forest12.w0.21116800.txt
+2023-03-03 11:55:53.325634 === Run ended (count=10000 start=0.01 end=1.99)

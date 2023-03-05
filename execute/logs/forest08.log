@@ -1,0 +1,17 @@
+2023-03-02 19:54:29.728552 === Run started with name=forest08 count=100 start=0.0 end=2.0.
+	b:0.893018 weight:1.38000000 saved at forest08/forest08.w1.38000000.txt
+2023-03-02 20:37:26.677619 === Run ended (count=100 start=0.0 end=2.0)
+2023-03-03 16:25:44.946835 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest08 count=100 start=1.375 end=1.385
+-> b:0.894081 weight:1.38260000 saved at forest08/forest08.w1.38260000.txt
+== Runtime of 0:01:08.128064 [H:M:S] for 100 runs
+==          0.68128064 seconds/run
+2023-03-03 16:26:53.074899 === Run ended ===
+2023-03-03 16:29:46.407401 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest08 count=1000 start=0.5 end=0.7
+-> b:0.896341 weight:0.50540000 saved at forest08/forest08.w0.50540000.txt
+== Runtime of 0:04:37.815034 [H:M:S] for 1000 runs
+==          0.277815034 seconds/run
+2023-03-03 16:34:24.222435 === Run ended ===

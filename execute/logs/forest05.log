@@ -1,0 +1,10 @@
+2023-03-03 10:21:28.617890 === Run started with name=forest05 count=1000 start=0.36 end=0.365.
+	b:0.823852 weight:0.36250500 saved at forest05/forest05.w0.36250500.txt
+2023-03-03 10:31:34.053925 === Run ended (count=1000 start=0.36 end=0.365)
+2023-03-04 14:41:26.375229 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest05 count=30000 start=0.2 end=0.8
+-> b:0.823753 weight:0.28714000 saved at forest05/forest05.w0.28714000.txt
+== Runtime of 4:06:15.340553 [H:M:S] for 30000 runs
+==          0.49251135176666666 seconds/run
+2023-03-04 18:47:41.715782 === Run ended ===

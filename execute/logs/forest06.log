@@ -1,0 +1,7 @@
+2023-03-03 16:20:54.449745 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest06 count=100 start=0.0 end=2.0
+-> b:0.833378 weight:0.58000000 saved at forest06/forest06.w0.58000000.txt
+== Runtime of 0:07:33.735245 [H:M:S] for 100 runs
+==          4.53735245 seconds/run
+2023-03-03 16:28:28.184990 === Run ended ===
