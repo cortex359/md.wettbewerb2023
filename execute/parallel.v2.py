@@ -12,7 +12,7 @@ import time
 
 SCRIPT = "parallel-v2"
 SOLVER = "solver.vs8.randomSeed"
-PROCESS_COUNT = 8
+PROCESS_COUNT = 20
 VERSION = 3
 
 
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     re_int = weight_end - weight_start
     seed_range = seed_end - seed_start
 
-    w_range = np.linspace(weight_start, weight_end, int(math.ceil(math.sqrt(total_sample_size / seed_range))))
+    w_range = np.linspace(weight_start, weight_end, int(total_sample_size / seed_range))
 
     weights = [(r, c) for r in w_range for c in range(seed_start, seed_end + 1)]
     random.shuffle(weights)
