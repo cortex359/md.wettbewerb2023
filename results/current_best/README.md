@@ -4,15 +4,16 @@
     pi-cpp/saved_results/2022_02_17/forest01.txt.out
 
 ## Forest 02
-    b:0.69002419
-    Gewichtung: 0.14485333…
-    pi-cpp/saved_results/2022_02_17/forest02.txt.out
+    b:0.69068135485379
+    Gewichtung: 0.17543
+    results/tsunami/forest02.w0.17543000.txt
 
 ## Forest 03
-    b:0.68683635
-    Gewichtung: 0.2209553333333287 (nicht-deterministisch)
-    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
-    forest03-0.2209553333333287.txt
+    b:0.68969426024214
+    Gewichtung: weight:0.17161392 (nicht-deterministisch)
+    auf Tsunami gefunden
+    Tag: non-det
+    results/tsunami/forest03.w0.17161392.txt
 
 ## Forest 04
     b:0.82450314
@@ -37,11 +38,10 @@
     forest07.w0.5441333333333329.txt
 
 ## Forest 08
-    b:0.89629529 
-    Gewichtung: 0.606666666666666 (nicht-deterministisch)
-    auf dem HPC gefunden
-    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
-    forest08.w0.606667.txt
+    b:0.89634129748981
+    Gewichtung: weight:0.50540000000000 (nicht-deterministisch)
+    auf Tsunami gefunden
+    Tag: non-det
 
 ## Forest 09 
     b:0.86202757
@@ -60,11 +60,11 @@
     optimal_packing/Generator.py
 
 ## Forest 12
-    b:0.81716850
-    Gewichtung: w:0.56280 (nicht-deterministisch)
-    auf dem HPC gefunden
+    b:0.81901446746411
+    Gewichtung: w:0.211168 (nicht-deterministisch)
     Tag: non-det
-    forest12.w0.562800.txt
+    auf Tsunami gefunden
+    results/tsunami/forest12.w0.21116800.txt
 
 ## Forest 13
     b:0.89485890
