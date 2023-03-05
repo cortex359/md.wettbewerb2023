@@ -152,7 +152,7 @@ if __name__ == "__main__":
     print(f"b:{maxB} weight:{maxWeighting:10.8f} seed:{maxSeed} forest:{name}\n")
 
     with open(path_to_logfile, "a") as logfile:
-        logfile.write(f"-> b:{maxB} weight:{maxWeighting:10.8f} not saved!\n")
+        logfile.write(f"-> b:{maxB} weight:{maxWeighting:10.8f} seed:{maxSeed} not saved!\n")
         logfile.write(f"== Runtime of {end_time-start_time} [H:M:S] for {total_sample_size} runs\n")
         logfile.write(f"==          {(end_time-start_time).total_seconds() / total_sample_size} seconds/run\n")
         logfile.write(f"{end_time} === Run ended ===\n")
