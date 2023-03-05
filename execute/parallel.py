@@ -50,7 +50,7 @@ def init_globals(counter):
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:
-        print("3d-plot.py [in_file] [samples] [start_weight] [start_weight]")
+        print("parallel.py [in_file] [samples] [start_weight] [start_weight]")
         name = "forest01"
         count = 1000
         start, end = (0., 2.)
