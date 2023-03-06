@@ -1,4 +1,6 @@
 import math
+import os.path
+import re
 import sys
 import matplotlib.pyplot as plt
 import numpy as np
@@ -61,9 +63,16 @@ def calc_table(forest_specs: str, forest_map: str):
 
     # rest_map.removesuffix(".out").removesuffix(".txt")
 
+    #print(f'| {forest_map.removeprefix(".*forest")} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | w | s | {testcase_name:30s} |')
+
+    m = re.match(".*forest([0-9]{2})\.w([012]\.[0-9]+)(_s([0-9]+))?\.txt(\.out)?", forest_map)
+    if len(m.groups()) == 3:
+        _seed = m.groups(0)[3]
+    else:
+        _seed = "n./A."
+
     if OUTPUT == "md-table":
-        # | b | a | d | test case |
-        print(f'| {forest_map.removeprefix("forest")} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | w | s | {testcase_name:30s} |')
+        print(f'| {m.groups(0)[0]} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | {m.groups(0)[1]} | {_seed} | {testcase_name:30s} |')
 
     global b_values, a_values, d_values
     b_values.append(b_value)
@@ -112,7 +121,11 @@ if __name__ == "__main__":
     OUTPUT = "md-table"
     if (len(sys.argv) >= 3):
         # score plot
-        for fmap in sys.argv[2:]:
-            calc_table(sys.argv[1], fmap)
+        if (len(sys.argv) == 3 and os.path.isdir(sys.argv[2])):
+            for fmap in os.listdir(sys.argv[2]):
+                calc_table(sys.argv[1], os.path.join(sys.argv[2], fmap))
+        else:
+            for fmap in sys.argv[2:]:
+                calc_table(sys.argv[1], fmap)
 
 #plot_table(weights, b_values, a_values, d_values)

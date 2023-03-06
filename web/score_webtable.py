@@ -13,7 +13,7 @@ else:
 
 
 def calc_team(team, forest):
-    table_file = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/web/data/{team}/{team}.{forest}.table'
+    table_file = f'web/data/{team}/{team}.{forest}.table'
 
     with open(f"{table_file}") as file:
         table = [line.removesuffix("\n") for line in file if line.strip() != ""]
@@ -52,8 +52,8 @@ for r in results:
     b_value, a_value, d_value, team = r
     print(f'| {b_value:16.14f} | {a_value:16.14f} | {d_value:16.14f} | {team} |')
 
-our_map = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/md.wettbewerb2023/results/current_best/{forest}.txt.out'
-our_specs = f'/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi/input_files/{forest}.txt'
+our_map = f'results/current_best/{forest}.txt.out'
+our_specs = f'input/{forest}.txt'
 
 b_our_best, a_our_best, d_our_best = Forest.calc_values_from_files(our_specs, our_map)
 
