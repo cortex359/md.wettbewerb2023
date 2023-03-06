@@ -59,9 +59,11 @@ def calc_table(forest_specs: str, forest_map: str):
         if OUTPUT != "md-table":
             print(f'b:{b_value:10.8f}        {forest_map}')
 
+    # rest_map.removesuffix(".out").removesuffix(".txt")
+
     if OUTPUT == "md-table":
         # | b | a | d | test case |
-        print(f'| {b_value:16.14f} | {a_value:16.14f} | {d_value:16.14f} | {testcase_name:30s} |')
+        print(f'| {forest_map.removeprefix("forest")} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | w | s | {testcase_name:30s} |')
 
     global b_values, a_values, d_values
     b_values.append(b_value)
