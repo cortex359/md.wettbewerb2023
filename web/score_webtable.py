@@ -11,6 +11,8 @@ if len(sys.argv) >= 3:
 else:
     exit(1)
 
+def approx_score(b: float) -> int:
+    return int(round((11.0485842207 ** (1.02479492518 + 1.56922969137 * b)) + (0.382775141267 * 3309.20728729 ** b), 0))
 
 def calc_team(team, forest):
     table_file = f'web/data/{team}/{team}.{forest}.table'
@@ -44,25 +46,24 @@ for team in teams:
 
 print(f"# {forest.capitalize()}: {map_name}\n")
 
-print("|                b |                a |                d | Team                  |")
-print("|-----------------:|-----------------:|-----------------:|:----------------------|")
+print("|                b |                a |                d | score* | Team                  |")
+print("|-----------------:|-----------------:|-----------------:|-------:|:----------------------|")
 
 results.sort()
 for r in results:
     b_value, a_value, d_value, team = r
-    print(f'| {b_value:16.14f} | {a_value:16.14f} | {d_value:16.14f} | {team} |')
+    print(f'| {b_value:16.14f} | {a_value:16.14f} | {d_value:16.14f} | {approx_score(b_value):6d} | {team} |')
 
 our_map = f'results/current_best/{forest}.txt.out'
 our_specs = f'input/{forest}.txt'
 
 b_our_best, a_our_best, d_our_best = Forest.calc_values_from_files(our_specs, our_map)
 
-print(f'| {b_our_best:16.14f} | {a_our_best:16.14f} | {d_our_best:16.14f} | PI |')
+print(f'| {b_our_best:16.14f} | {a_our_best:16.14f} | {d_our_best:16.14f} | {approx_score(b_our_best):6d} | PI |')
 
 if b_value > 0 and a_value > 0 and d_value > 0:
-    print(f'| {(((b_our_best/b_value)-1)*100):15.11f}% | {(((a_our_best/a_value)-1)*100):15.11f}% | {(((d_our_best/d_value)-1)*100):15.11f}% | rel. diff to {team} |')
+    print(f'| {(((b_our_best/b_value)-1)*100):15.11f}% | {(((a_our_best/a_value)-1)*100):15.11f}% | {(((d_our_best/d_value)-1)*100):15.11f}% | {(approx_score(b_our_best) - approx_score(b_value)):6d} | rel. diff to {team} |')
 print(f'\n---\n')
-
 
 
 exit(0)
