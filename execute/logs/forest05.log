@@ -11,3 +11,10 @@
 2023-03-06 06:36:21.797424 === Run started ===
 == script=parallel-v2 solver=solver.vs8.randomSeed threads=20
 == name=forest05 total_sample_size=20000 seed_start=1 seed_end=20000 weight_start=0.28714 weight_end=0.28714
+-> b:0.823327 weight:0.28714000 seed:1009054.0 not saved!
+== Runtime of 9:24:42.398051 [H:M:S] for 20000 runs
+==          1.6941199025499998 seconds/run
+2023-03-06 16:01:04.195475 === Run ended ===
+2023-03-06 16:29:45.857074 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest05 total_sample_size=20000 seed_start=20001 seed_end=20011 weight_start=0.2871 weight_end=0.38

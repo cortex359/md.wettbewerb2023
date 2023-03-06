@@ -10,3 +10,24 @@
 2023-03-03 08:48:09.528052 === Run started with name=forest03 count=100000 start=0.171 end=0.1725.
 	b:0.689694 weight:0.17161335 saved at forest03/forest03.w0.17161335.txt
 2023-03-03 08:56:33.434838 === Run ended (count=100000 start=0.171 end=0.1725)
+2023-03-06 14:49:53.045811 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest03 total_sample_size=300000 seed_start=1 seed_end=2000 weight_start=0.171 weight_end=0.172
+-> b:0.694799 weight:0.17194631 seed:1000343.0 not saved!
+== Runtime of 0:57:05.931266 [H:M:S] for 300000 runs
+==          0.011419770886666666 seconds/run
+2023-03-06 15:46:58.977077 === Run ended ===
+2023-03-06 16:11:28.648918 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest03 total_sample_size=30000 seed_start=2001 seed_end=7000 weight_start=0.1719463 weight_end=0.17194632
+-> b:0.694799 weight:0.17194631 seed:1006118.0 not saved!
+== Runtime of 0:04:14.038596 [H:M:S] for 30000 runs
+==          0.008467953200000001 seconds/run
+2023-03-06 16:15:42.687514 === Run ended ===
+2023-03-06 16:29:08.665670 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest03 total_sample_size=30000 seed_start=7001 seed_end=17002 weight_start=0.1719463 weight_end=0.17194632
+-> b:0.694799 weight:0.17194632 seed:1008250.0 not saved!
+== Runtime of 0:03:05.659040 [H:M:S] for 30000 runs
+==          0.0061886346666666665 seconds/run
+2023-03-06 16:32:14.324710 === Run ended ===
