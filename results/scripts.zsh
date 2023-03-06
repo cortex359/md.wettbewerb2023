@@ -18,6 +18,7 @@ function compaire() {
     echo "${0} [01..14] [resultFile1] [resultFile2] [...]"
     exit 1
   }
-  python ${projectPath}/scoring/score.py ${projectPath}/input/forest01.txt \
-    ${projectPath}/results/current_best/forest01.txt.out ${argv[2,-1]}
+  i=$1
+  python ${projectPath}/scoring/score.py ${projectPath}/input/forest${i}.txt \
+    ${projectPath}/results/current_best/forest${i}.txt.out ${argv[2,-1]}
 }

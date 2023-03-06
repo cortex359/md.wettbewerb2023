@@ -34,7 +34,7 @@ Generate webtable process:
 Fetch snapshots with `python webcrawler.py` and extract current snapshot.zip.
 
 ```zsh
-snapshot="snapshot_060323_1043"
+snapshot="snapshot_060323_1603"
 teams=( koeln uka coca-cola-und-nutella ets )
 
 for t in $teams; do
@@ -58,7 +58,7 @@ parse tables and save relative scores:
 ```zsh
 {
   for i in {01..14} ; do
-    python ./score_webtable.py forest${i} ${teams};
+    python web/score_webtable.py forest${i} ${teams};
   done
-} >| web/relative_score_tables/overview-$(date +'%F_%T').txt
+} >| web/relative_score_tables/overview-$(date +'%F_%H-%M').md
 ```

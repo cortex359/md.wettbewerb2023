@@ -66,13 +66,17 @@ def calc_table(forest_specs: str, forest_map: str):
     #print(f'| {forest_map.removeprefix(".*forest")} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | w | s | {testcase_name:30s} |')
 
     m = re.match(".*forest([0-9]{2})\.w([012]\.[0-9]+)(_s([0-9]+))?\.txt(\.out)?", forest_map)
-    if len(m.groups()) == 3:
-        _seed = m.groups(0)[3]
-    else:
-        _seed = "n./A."
 
-    if OUTPUT == "md-table":
-        print(f'| {m.groups(0)[0]} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | {m.groups(0)[1]} | {_seed} | {testcase_name:30s} |')
+    if m is not None:
+        if len(m.groups(0)) >= 3:
+            _seed = m.groups(0)[3]
+        else:
+            _seed = "n./A."
+
+        if OUTPUT == "md-table":
+            print(f'| {m.groups(0)[0]} | {testcase_name:30s} | {b_value:16.14f} | {a_value:10.8f} | {d_value:10.8f} | {m.groups(0)[1]} | {_seed} | found at | tag |')
+    else:
+            print(f'b:{b_value:16.14f} a:{a_value:10.8f} d:{d_value:10.8f} {testcase_name:30s}')
 
     global b_values, a_values, d_values
     b_values.append(b_value)
