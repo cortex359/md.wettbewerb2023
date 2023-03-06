@@ -1,7 +1,10 @@
 ## Forest 01
     b:0.68051383
-    Gewichtung: 0.55779666…
-    pi-cpp/saved_results/2022_02_17/forest01.txt.out
+    Gewichtung: w0.55188141 (deterministisch)
+    Seed: 1000184
+    auf Tsunami gefunden
+    Tag: solver.vs8.randomSeed.run
+    forest01.w0.55188141_s1000184.txt
 
 ## Forest 02
     b:0.69068135485379
