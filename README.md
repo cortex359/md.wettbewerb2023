@@ -33,17 +33,32 @@ Generate webtable process:
 
 Fetch snapshots with `python webcrawler.py` and extract current snapshot.zip.
 
+```zsh
+snapshot="snapshot_060323_1043"
+teams=( koeln uka coca-cola-und-nutella ets )
+
+for t in $teams; do
+  mkdir "web/data/${t}/${snapshot}"
+  unzip -d "web/data/${t}/${snapshot}" "web/data/${t}/${snapshot}.zip"
+done
+
+```
+
+
 Enter the group directory and extract tables:
 ```zsh
-for i in {01..14} ; do 
-  pcre2grep -Me '(?:<pre>)([^<]+[\n\s]*)+(?:<\/pre>)' -m1 --output '$1' snapshot_020323_1842/forest${i}.txt.html > ${PWD:t}.forest${i}.table 
+for t in ${teams}; do
+  for i in {01..14} ; do 
+    pcre2grep -Me '(?:<pre>)([^<]+[\n\s]*)+(?:<\/pre>)' -m1 --output '$1' web/data/${t}/${snapshot}/forest${i}.txt.html >| web/data/${t}/${t}.forest${i}.table 
+  done
 done
+
 ```
 parse tables and save relative scores:
 ```zsh
 {
   for i in {01..14} ; do
-    python ./score_webtable.py koeln forest$i;
+    python ./score_webtable.py forest${i} ${teams};
   done
-} >| relative_score_tables/koeln-2023-03-05_21-38.txt
+} >| web/relative_score_tables/overview-$(date +'%F_%T').txt
 ```
