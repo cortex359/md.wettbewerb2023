@@ -21,4 +21,3 @@ function compaire() {
   python ${projectPath}/scoring/score.py ${projectPath}/input/forest01.txt \
     ${projectPath}/results/current_best/forest01.txt.out ${argv[2,-1]}
 }
-
