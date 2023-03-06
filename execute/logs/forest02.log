@@ -33,3 +33,6 @@
 == Runtime of 5:44:23.570533 [H:M:S] for 20000 runs
 ==          1.03317852665 seconds/run
 2023-03-06 02:44:30.073918 === Run ended ===
+2023-03-06 06:31:36.988589 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest02 total_sample_size=200000 seed_start=1 seed_end=200 weight_start=0.1 weight_end=0.4
