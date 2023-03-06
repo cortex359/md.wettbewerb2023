@@ -1,84 +1,63 @@
-## Forest 01
-    b:0.68051383
-    Gewichtung: w0.55188141 (deterministisch)
-    Seed: 1000184
-    auf Tsunami gefunden
-    Tag: solver.vs8.randomSeed.run
-    forest01.w0.55188141_s1000184.txt
+# Results
 
-## Forest 02
-    b:0.69068135485379
-    Gewichtung: 0.17543
-    results/tsunami/forest02.w0.17543000.txt
+| Forest | Testcase                       | b                | a          | d          |                  w |    seed |     found at | tag                   |
+|-------:|:-------------------------------|------------------|------------|------------|-------------------:|--------:|-------------:|-----------------------|
+|      1 | SherwoodForest                 | 0.68146142464544 | 0.85482736 | 0.79719187 |         0.56893788 | 1008000 |          hpc | solver.vs8.randomSeed |
+|      2 | MadWorld                       | 0.69068135485379 | 0.86644183 | 0.79714683 |            0.17543 |         |      tsunami | solver.vs7.non-det    |
+|      3 | BadMadWorld                    | 0.68969426024214 | 0.86299550 | 0.79918639 |         0.17161392 |         |      tsunami | solver.vs7.non-det    |
+|      4 | BitForest                      | 0.82450314237752 | 0.93611293 | 0.88077316 |             0.4003 |         |      rankail | 2022_02_17            |
+|      5 | AnotherBitForest               | 0.82450314237752 | 0.93611293 | 0.88077316 |             0.4003 |         |      rankail | 2022_02_17            |
+|      6 | GreatBitForest                 | 0.83680630       | 0.93520187 | 0.89478681 | 0.4516666666666628 |         |          hpc | solver.vs7.non-det    |
+|      7 | AnotherGreatBitForest          | 0.83763051       | 0.93644594 | 0.89447823 | 0.5441333333333329 |         |          hpc | solver.vs7.non-det    |
+|      8 | LinearRadiusVariationForest    | 0.89634129748981 | 0.93814868 | 0.95543629 |             0.5054 |         |      tsunami | solver.vs7.non-det    |
+|      9 | LinearRadiusVariationForest_2  | 0.86202756762231 | 0.90230311 | 0.95536362 |            0.26648 |         |      rankail | 2022_02_17            |
+|     10 | BigLinearRadiusVariationForest | 0.90594467       | 0.93863838 | 0.96516901 | 0.2209553333333287 |         |          hpc | solver.vs7.non-det    |
+|     11 | RomanNonVariationForest        | 0.88982139       | 0.89880966 | 0.98999981 |              n./A. |   n./A. | Generator.py | optimal_packing       |
+|     12 | PalmenWald                     | 0.81901446746411 | 0.87797043 | 0.93284972 |           0.211168 |         |      tsunami | solver.vs7.non-det    |
+|     13 | TeamKoelnWald                  | 0.89485889749460 | 0.93488746 | 0.95718355 |            1.22900 |         |          hpc | solver.vs7.non-det    |
+|     14 | GeneticExperimentationForest   | 0.90355367058712 | 0.94025497 | 0.96096665 |             0.6925 |         |      tsunami | solver.vs7.non-det    |
 
-## Forest 03
-    b:0.68969426024214
-    Gewichtung: weight:0.17161392 (nicht-deterministisch)
-    auf Tsunami gefunden
-    Tag: non-det
-    results/tsunami/forest03.w0.17161392.txt
 
-## Forest 04
-    b:0.82450314
-    Gewichtung: 0.4003
-    pi-cpp/saved_results/2022_02_17/forest04.txt.out
+## Forest01
+![](./plots/forest01.svg)
 
-## Forest 05
-    b:0.82450314
-    Gewichtung: 0.4003
-    pi-cpp/saved_results/2022_02_17/forest05.txt.out
+## Forest02
+![](./plots/forest02.svg)
 
-## Forest 06
-    b:0.83680630
-    Gewichtung: 0.4516666666666628
-    forest06-0.4516666666666628.txt
+## Forest03
+![](./plots/forest03.svg)
 
-## Forest 07
-    b:0.83763051
-    Gewichtung: 0.5441333333333329 (nicht-deterministisch)
-    auf dem HPC gefunden
-    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
-    forest07.w0.5441333333333329.txt
+## Forest04
+![](./plots/forest04.svg)
 
-## Forest 08
-    b:0.89634129748981
-    Gewichtung: weight:0.50540000000000 (nicht-deterministisch)
-    auf Tsunami gefunden
-    Tag: non-det
+## Forest05
+![](./plots/forest05.svg)
 
-## Forest 09 
-    b:0.86202757
-    Gewichtung: 0.26648
-    Commit: 17dd51e3e101d4881ed601281f8c9dc7da94a78c
-    File: pi-cpp/saved_results/2022_02_17/forest09.txt.out
+## Forest06
+![](./plots/forest06.svg)
 
-## Forest 10
-    b:0.90594467        
-    Gewichtung: 0.2209553333333287 (nicht-deterministisch)
-    Commit: f5f0cecafe213c162457fcc3dd40ef870e039998
-    forest10-0.29746666666666755.txt
+## Forest07
+![](./plots/forest07.svg)
 
-## Forest 11
-    b:0.88982139
-    optimal_packing/Generator.py
+## Forest08
+![](./plots/forest08.svg)
 
-## Forest 12
-    b:0.81901446746411
-    Gewichtung: w:0.211168 (nicht-deterministisch)
-    Tag: non-det
-    auf Tsunami gefunden
-    results/tsunami/forest12.w0.21116800.txt
+## Forest09
+![](./plots/forest09.svg)
 
-## Forest 13
-    b:0.89485890
-    Gewichtung: w:1.22900 (nicht-deterministisch)
-    auf dem HPC gefunden
-    Tag: non-det
-    forest13.w1.229000.txt
+## Forest10
+![](./plots/forest10.svg)
 
-## Forest 14
-    b:0.903554
-    Gewichtung: weight:0.69250000 (nicht-deterministisch)
-    auf Tsunami gefunden
-    Tag: non-det
-    forest14/forest14.w0.69250000.txt
+# New Testcases
+
+## Forest11
+![](./plots/forest11.svg)
+
+## Forest12
+![](./plots/forest12.svg)
+
+## Forest13
+![](./plots/forest13.svg)
+
+## Forest14
+![](./plots/forest14.svg)
