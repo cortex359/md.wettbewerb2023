@@ -5,3 +5,13 @@
 == Runtime of 0:04:43.535670 [H:M:S] for 100 runs
 ==          2.8353566999999997 seconds/run
 2023-03-05 17:37:28.956739 === Run ended ===
+2023-03-05 22:51:06.147381 === Run started ===
+== script=parallel-v1 solver=solver.vs7.non-det threads=20
+== name=forest07 count=100 start=0.5 end=0.6
+-> b:0.834633 weight:0.50500000 saved at forest07/forest07.w0.50500000.txt
+== Runtime of 0:02:43.130245 [H:M:S] for 100 runs
+==          1.63130245 seconds/run
+2023-03-05 22:53:49.277626 === Run ended ===
+2023-03-05 23:13:50.412856 === Run started ===
+== script=parallel-v2 solver=solver.vs8.randomSeed threads=20
+== name=forest07 total_sample_size=10000 seed_start=1 seed_end=10 weight_start=0.5 weight_end=0.6
