@@ -2,8 +2,21 @@ scoring/plots/*.svg
 scoring/result_files/*.txt
 
 pi-cpp_vs.7
+pi-cpp_vs.8
 web/data
 execute/results
+
+Papers/Lineare Programme/Effiziente Algorithmen. Lineare Programme 1. Walter Unger.pdf
+Papers/Lineare Programme/Effiziente Algorithmen. Lineare Programme 2. Walter Unger.pdf
+Papers/Lineare Programme/Introduction to Operations Research 9th Edition. Hillier, Lieberman.pdf
+Papers/A heuristic for the circle packing problem with a variety of containers. Lopez Soto, Beasley (2011).pdf
+Papers/An action-space-based global optimization algorithm for packing circles into a square container. Kun He, Menglong Huang, Chenkai Yang (2015).pdf
+Papers/Computing Circle Packing Representations of Planar Graphs, 1911.00612.pdf
+Papers/Efficiently packing unequal disks in a circle: A computational approach which exploits the continuous and combinatorial structure of the problem.pdf
+Papers/Formulation Space Search for two-dimensional Packing Problems. Lopez Soto (2013).pdf
+Papers/Greedy Algorithms for Packing Unequal Circles into a Rectangular Container.pdf
+Papers/Linear models for the approximate solution of the problem of packing equal circles into a given domain. Shamil (2013).pdf
+Papers/Packing Geometric Objects with Optimal Worst-Case Density.pdf
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,linux,pycharm,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,linux,pycharm,visualstudiocode

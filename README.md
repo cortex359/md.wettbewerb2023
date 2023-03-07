@@ -3,7 +3,7 @@
 ## Aktuelle Übersicht
 ![](https://wettbewerb.mathe-dual.de/scores.png)
 
-[Zwischenstand](https://wettbewerb.mathe-dual.de/)
+[Finale Auswertung](https://wettbewerb.mathe-dual.de/)
 und [Vergleichsübersicht](https://wettbewerb.mathedual.de/index_main.html)
 sowie [Info-Seite](https://www.mathe-dual.de/index.php/wettbewerb-link) auf [mathe-dual.de](https://www.mathe-dual.de).
 
