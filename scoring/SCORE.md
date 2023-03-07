@@ -1,9 +1,14 @@
 # Score
 
-a^(c+b*x)+d^(g*x+f)
-3.84772598623 ^ (52.79763528655 * x + 1.8270126164) + 15.0154678651 ^ (2.9915917486 * x - 0.354477260029)
+The official score as described [here](https://wettbewerb.mathe-dual.de/score.html) can be approximated within a 
+tolerance of 1 point in the upper region with this formular:
 
-11.0485842207 ** (1.02479492518 + 1.56922969137 * b) + 0.382775141267 * 3309.20728729 ** b
+$$
+    S(b) = 11.0485842207^{(1.02479492518 + 1.56922969137 \cdot b)} + 0.382775141267 \cdot 3309.20728729^{b}
+$$
+
+Test and benchmarking of the score approximation:
+(`*` denotes an error by one point)
 
 | b                | score |  theo | 
 |:-----------------|------:|------:|

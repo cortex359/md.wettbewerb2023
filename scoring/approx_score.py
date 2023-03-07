@@ -1,7 +1,7 @@
 import sys
 
 
-def official_score(b: float) -> int:
+def approx_score(b: float) -> int:
     return int(round((11.0485842207 ** (1.02479492518 + 1.56922969137 * b)) + (0.382775141267 * 3309.20728729 ** b), 0))
 
 def benchmark_score():

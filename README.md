@@ -27,6 +27,13 @@ Cortex's analytics, research, batch jobs and approaches [cortex/md.wettbewerb202
 ![](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)
 ![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
+## Installation
+
+In order to use the python scripts, some packages need to be installed in your environment.
+
+```zsh
+pip install -r requirements.txt
+```
 
 ## Usage
 Generate webtable process:
