@@ -23,9 +23,9 @@ sowie [Info-Seite](https://www.mathe-dual.de/index.php/wettbewerb-link) auf [mat
 ## Links
 Repository zur offiziellen Einreichung der Ergebnisse [md2022/groups/pi](https://git-ce.rwth-aachen.de/md2022/groups/pi)
 
-Rankail's solver in C++ [thesing.samuel/pi-cpp](https://git-ce.rwth-aachen.de/thesing.samuel/pi-cpp)
+Rankail's solver in C++ [Rankail/md-wettbewerb-2023](https://github.com/Rankail/md-wettbewerb-2023)
 
-Cortex's analytics, research, batch jobs and approaches [cortex/md.wettbewerb2023](https://git-ce.rwth-aachen.de/cortex/md.wettbewerb2023)
+Cortex's analytics, research, batch jobs and approaches [cortex359/md.wettbewerb2023](https://github.com/cortex359/md.wettbewerb2023) [Internal GitLab Repo](https://git-ce.rwth-aachen.de/cortex/md.wettbewerb2023)
 
 ---
 
@@ -36,8 +36,8 @@ Cortex's analytics, research, batch jobs and approaches [cortex/md.wettbewerb202
 ![](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)
 ![](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
-![](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)
-![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+[![](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)](https://git-ce.rwth-aachen.de/cortex/md.wettbewerb2023)
+[![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cortex359/md.wettbewerb2023)
 
 A list with relevant research publications can be found here: [Research.md](Research.md)
 
