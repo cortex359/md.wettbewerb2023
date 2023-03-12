@@ -39,7 +39,7 @@ Cortex's analytics, research, batch jobs and approaches [cortex359/md.wettbewerb
 [![](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)](https://git-ce.rwth-aachen.de/cortex/md.wettbewerb2023)
 [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cortex359/md.wettbewerb2023)
 
-A list with relevant research publications can be found here: [Research.md](Research.md)
+A list with relevant research publications can be found here: [RESEARCH.md](RESEARCH.md)
 
 An overview over our best results: [results/current_best/README.md](results/current_best/README.md)
 
