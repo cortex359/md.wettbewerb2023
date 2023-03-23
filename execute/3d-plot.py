@@ -13,7 +13,7 @@ PROCESS_COUNT = 8
 VERSION = 2
 
 if VERSION == 2:
-	SOLVER_BINARY = "/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi-cpp/inputs/Solver_weight_Release"
+	SOLVER_BINARY = "./execute/bin/solver.vs6.weight.run"
 elif VERSION == 1:
 	SOLVER_BINARY = "/home/cthelen/Projekte/MatheDual/Wettbewerb2023/pi-cpp/inputs/Solver_Release"
 
