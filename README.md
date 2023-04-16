@@ -1,8 +1,8 @@
-# :1st_place_medal: Team π :trophy: Programmierwettbewerb 2023 (Mathe-dual e.V.)
+# :trophy: Programmierwettbewerb 2023 (Mathe-dual e.V.)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-## Team π
+## :1st_place_medal: Team π
   - Samuel Thesing [samuel.thesing@rwth-aachen.de](mailto:samuel.thesing@rwth-aachen.de) :octocat: [@Rankail](https://github.com/Rankail)
   - Christian Rene Thelen [christian.thelen@rwth-aachen.de](mailto:christian.thelen@rwth-aachen.de) :octocat: [@cortex359](https://github.com/cortex359)
 
