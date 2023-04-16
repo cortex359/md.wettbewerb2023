@@ -27,9 +27,9 @@ The other repository contains the actual solver, written in C++ as well as scram
 
 | Place | Team                       | Bonus | Total Score | Code               |
 | ----: | :------------------------- | ----: | ----------: | ------------------ |
-|    1. | [pi][1][11]                |   100 |        9025 | [:octocat:][1][11] |
-|    2. | [koeln][2]                 |    50 |        8794 | [:octocat:][2]     |
-|    3. | [coca-cola-und-nutella][3] |    25 |        8538 | [:octocat:][3]     |
+|    1. | [pi][1]                |   100 |        9025 | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)][1][![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)][11] |
+|    2. | [koeln][2]                 |    50 |        8794 | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)][2]     |
+|    3. | [coca-cola-und-nutella][3] |    25 |        8538 | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)][3]     |
 |    4. | uka                        |       |        8030 |                    |
 |    5. | ets                        |       |        7046 |                    |
 |    6. | fabio-palmen               |       |        5424 |                    |
@@ -51,9 +51,6 @@ sowie allgemeine [Informationen](https://www.mathe-dual.de/index.php/wettbewerb-
 
 
 # This Repository
-
-[![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cortex359/md.wettbewerb2023)
-
 A list with relevant research publications can be found here: [RESEARCH.md](RESEARCH.md)
 
 An overview over our best results: [results/current_best/README.md](results/current_best/README.md)
